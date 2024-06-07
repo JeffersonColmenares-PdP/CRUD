@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actualizar Elemento Tecnologico</title>
+</head>
+<body>
+    <h2>Actualizar Elemento Tecnologico</h2>
+    <form action="http://127.0.0.1:5000/actualizar" method="post">
+        Numero de serie: <input type="text" name="numero_serie"><br>
+        <br> <!-- Salto de línea -->
+        Ciudad: <input type="text" name="ciudad"><br>
+        <br> <!-- Salto de línea -->
+        Precio: <input type="text" name="precio"><br>
+        <br> <!-- Salto de línea -->
+        Fecha_fabricacion: <input type="text" name="fecha_fabricacion"><br>
+        <br> <!-- Salto de línea -->
+        Vendedor: <input type="text" name="vendedor"><br>
+        <br> <!-- Salto de línea -->
+        <input type="submit" value="Actualizar elemento tecnologico">
+    </form>
+
+    <!--  tabla de elementos -->
+    <iframe src="http://127.0.0.1:5000/consulta" style="width:100%; height:300px; border:none;"></iframe>
+
+</body>
+</html>
