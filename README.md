@@ -39,3 +39,5 @@ config.py
     archivo crear.html
     archivo actualizar.html
 
+# comando para crear el requirements con lo que instale
+pip freeze > requirements.txt
