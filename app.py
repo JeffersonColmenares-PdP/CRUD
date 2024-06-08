@@ -37,7 +37,7 @@ def eliminar():
     cur.close()
     close_db(conn)
     
-    return 'Elemento tecnologico' + numero_serie + 'eliminado correctamente'
+    return 'Elemento tecnologico ' + numero_serie + ' eliminado correctamente'
 
 
 @app.route('/crear', methods=['POST'])
@@ -55,7 +55,7 @@ def crear_elemento():
     cur.execute('INSERT INTO elementos_tecnologicos (numero_serie, ciudad, precio, fecha_fabricacion, vendedor) VALUES (%s, %s, %s, %s, %s)',
                 (numero_serie, ciudad, precio, fecha_fabricacion, vendedor))
     conn.commit()
-    return 'Elemento tecnologico' + numero_serie + 'creado correctamente'
+    return 'Elemento tecnologico ' + numero_serie + ' creado correctamente'
 
 
 @app.route('/actualizar', methods=['POST'])

@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "48eda796-491a-4f4b-87c4-500d5cb50035",
+		"name": "Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23225300"
+	},
+	"item": [
+		{
+			"name": "CRUD",
+			"item": [
+				{
+					"name": "Consulta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/consulta",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"consulta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "numero_serie",
+									"value": "101",
+									"type": "text"
+								},
+								{
+									"key": "ciudad",
+									"value": "Cantabria",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "1560",
+									"type": "text"
+								},
+								{
+									"key": "fecha_fabricacion",
+									"value": "2024/02/06",
+									"type": "text"
+								},
+								{
+									"key": "vendedor",
+									"value": "Jefferson Colmenares",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/crear",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "numero_serie",
+									"value": "101",
+									"type": "text"
+								},
+								{
+									"key": "ciudad",
+									"value": "Monteria",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "fecha_fabricacion",
+									"value": "2024/06/04",
+									"type": "text"
+								},
+								{
+									"key": "vendedor",
+									"value": "Jefferson Colmenares",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/actualizar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Elimina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "numero_serie",
+									"value": "101",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/elimina",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"elimina"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

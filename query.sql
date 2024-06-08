@@ -3,7 +3,8 @@ create table elementos_tecnologicos (
 	ciudad VARCHAR(50),
 	precio DECIMAL(5,1),
 	fecha_fabricacion DATE,
-	vendedor VARCHAR(50)
+	vendedor VARCHAR(50),
+	CONSTRAINT elementos_tecnologicos_pkey PRIMARY KEY (numero_serie)
 );
 insert into elementos_tecnologicos (numero_serie, ciudad, precio, fecha_fabricacion, vendedor) values (1, 'Kukawa', 996.8, '26/03/2001', 'Nerita Diviny');
 insert into elementos_tecnologicos (numero_serie, ciudad, precio, fecha_fabricacion, vendedor) values (2, 'Tongyu', 879.8, '20/02/2011', 'Charmaine Krystek');
